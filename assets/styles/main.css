@@ -140,10 +140,10 @@ header .container .nav input {
 .about-me {
   margin: 60px 0;
 }
-.about-me .container {
-  display: flex;
+.about-me .container {  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
   align-items: center;
 }
 .about-me .container h2 {
@@ -214,4 +214,69 @@ header .container .nav input {
   font-size: 16px;
   line-height: 1;
   color: var(--platinum);
+}
+.Blog .container {
+  padding: 60px 0;
+  text-align: center;
+}
+.Blog .container h2 {
+  font-size: 54px;
+  padding-bottom: 20px;
+  line-height: 1;
+  color: var(--dark-gunmetal);
+}
+
+.Blog .container .languages-learning {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  line-height: 1;
+  gap: 20px;
+  margin-top: 20px;
+}
+.Blog .container .languages-learning .card {
+  width: 330px;
+  height: 150px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  border-radius: 10px;
+ background-color: var(--platinum);
+}
+.Blog .container .languages-learning .card .img img {
+  width: 149px;
+  border-radius: 10px;
+}
+
+.Blog .container .languages-learning .card h3 {
+  font-size: 22px;
+  padding: 13px 0;
+  color: var(--dark-gunmetal);
+}
+.Blog .container .languages-learning .card p {
+  font-size: 16px;
+  color: rgba(26, 25, 25, 0.751);
+}
+
+
+@media (max-width: 991){
+  .Blog .container .languages-learning .card{
+    width: 200px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: red;
+  }
+  .Blog .container .languages-learning .card .img img {
+    width: 99px;
+    border-radius: 5px;
+  }
+  .Blog .container .languages-learning .card h3{
+    font-size: 18px;
+
+  }
+  .Blog .container .languages-learning .card p{
+    font-size: 14px;
+  }
 }
