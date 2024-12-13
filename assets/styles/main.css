@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,10 +6,10 @@
 :root {
   --white: #ffffff;
   --dark-gunmetal: #212529;
-  --platinum: #DEE2E6;
+  --platinum: #dee2e6;
 }
 .container {
-  padding: 0 15px;
+  padding: 0 30px;
   margin: auto;
 }
 @media (min-width: 768px) {
@@ -25,5 +25,81 @@
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+  }
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+header {
+  width: 100%;
+  padding: 10px 0;
+  background-color: var(--dark-gunmetal);
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+header .container .logo a {
+  font-size: 43px;
+  font-weight: bold;
+  color: var(--white);
+}
+header .container .nav input {
+  appearance: none;
+}
+@media (max-width: 991px) {
+  header.container .nav {
+    position: relative;
+  }
+  header .container .nav label img {
+    cursor: pointer;
+    background-color: var(--white);
+  }
+  header .container .nav input {
+    appearance: none;
+  }
+  header .container .nav input:checked + ul {
+    display: block;
+  }
+
+  header.container .nav ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    min-width: 250px;
+    background-color: var(--white);
+    z-index: 10;
+  }
+  header .container .nav ul li a {
+    display: block;
+    padding: 10px;
+    color: var(--black);
+  }
+  header .container .nav ul li:not(:last-child) {
+    border-bottom: 1px solid rgb(0 0 0 / 0.1);
+  }
+}
+@media (min-width: 992px) {
+  header .container .nav label,
+  header .container .nav input {
+    display: none;
+  }
+  header .container .nav ul {
+    display: flex;
+  }
+  header .container .nav ul li {
+    padding: 10px;
+  }
+  header .container .nav ul li a {
+    color: var(--white);
   }
 }
