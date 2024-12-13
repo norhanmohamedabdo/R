@@ -152,9 +152,9 @@ header .container .nav input {
   color: var(--dark-gunmetal);
 }
 .about-me .container .content p {
-  font-size: 14px;
-  line-height: 1.5;
-  color: rgba(26, 25, 25, 0.751);
+  font-size: 18px;
+  line-height: 1;
+  color: var(--dark-gunmetal);
 }
 .about-me .container .content a {
   display: inline-block;
@@ -164,4 +164,54 @@ header .container .nav input {
   border-radius: 10px;
   background-color: var(--dark-gunmetal);
   color: var(--white);
+}
+.about-me .container .content .btn {
+  font-size: 18px;
+  background-color: transparent;
+  border: 1px solid var(--dark-gunmetal);
+  color: var(--dark-gunmetal);
+}
+.Sesrvice {
+  background-color: var(--platinum);
+}
+.Sesrvice .container {
+  padding: 60px 0;
+  text-align: center;
+}
+.Sesrvice .container h2 {
+  font-size: 54px;
+  padding-bottom: 20px;
+  line-height: 1;
+  color: var(--dark-gunmetal);
+}
+.Sesrvice .container p {
+  padding-bottom: 10px;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--dark-gunmetal);
+}
+.Sesrvice .cards {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  line-height: 1.6;
+  gap: 40px;
+  margin-top: 20px;
+}
+.Sesrvice .cards .card-detalis {
+  padding: 40px 0px;
+  width: 260px;
+  background-color: var(--dark-gunmetal);
+  box-shadow: 1px 1px 3px var(--dark-gunmetal);
+}
+.Sesrvice .cards .card-detalis h3 {
+  font-size: 18px;
+  color: var(--white);
+}
+.Sesrvice .cards .card-detalis p {
+  font-size: 16px;
+  line-height: 1;
+  color: var(--platinum);
 }
