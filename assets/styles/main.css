@@ -33,6 +33,12 @@ a {
 ul {
   list-style: none;
 }
+h2{
+   font-size: 44px;
+  padding-bottom: 20px;
+  line-height: 1;
+  color: var(--dark-gunmetal);
+}
 img {
   max-width: 100%;
 }
@@ -115,6 +121,10 @@ header .container .nav input {
   flex-wrap: wrap;
   align-items: start;
 }
+@media (max-width: 991px) {
+ .hero .container {
+    justify-content: center;
+  }}
 .hero .container .info {
   margin-top: 80px;
 }
@@ -128,7 +138,7 @@ header .container .nav input {
   padding: 10px 0;
   color: rgba(26, 25, 25, 0.751);
 }
-.container a {
+.container .info  a{
   display: block;
   width: fit-content;
   margin-top: 10px;
@@ -146,11 +156,10 @@ header .container .nav input {
 
   align-items: center;
 }
-.about-me .container h2 {
-  font-size: 54px;
-  line-height: 1;
-  color: var(--dark-gunmetal);
-}
+@media (max-width: 991px) {
+  .about-me .container  {
+    justify-content: center;
+  }}
 .about-me .container .content p {
   font-size: 18px;
   line-height: 1;
@@ -166,7 +175,8 @@ header .container .nav input {
   color: var(--white);
 }
 .about-me .container .content .btn {
-  font-size: 18px;
+   padding: 8px 20px;
+  font-size: 16px;
   background-color: transparent;
   border: 1px solid var(--dark-gunmetal);
   color: var(--dark-gunmetal);
@@ -177,12 +187,6 @@ header .container .nav input {
 .Sesrvice .container {
   padding: 60px 0;
   text-align: center;
-}
-.Sesrvice .container h2 {
-  font-size: 54px;
-  padding-bottom: 20px;
-  line-height: 1;
-  color: var(--dark-gunmetal);
 }
 .Sesrvice .container p {
   padding-bottom: 10px;
@@ -219,13 +223,6 @@ header .container .nav input {
   padding: 60px 0;
   text-align: center;
 }
-.Blog .container h2 {
-  font-size: 54px;
-  padding-bottom: 20px;
-  line-height: 1;
-  color: var(--dark-gunmetal);
-}
-
 .Blog .container .languages-learning {
   display: flex;
   justify-content: center;
@@ -249,7 +246,6 @@ header .container .nav input {
   width: 149px;
   border-radius: 10px;
 }
-
 .Blog .container .languages-learning .card h3 {
   font-size: 22px;
   padding: 13px 0;
@@ -259,14 +255,12 @@ header .container .nav input {
   font-size: 16px;
   color: rgba(26, 25, 25, 0.751);
 }
-
-
 @media (max-width: 991){
   .Blog .container .languages-learning .card{
     width: 200px;
     height: 100px;
     border-radius: 5px;
-    background-color: red;
+
   }
   .Blog .container .languages-learning .card .img img {
     width: 99px;
@@ -279,4 +273,24 @@ header .container .nav input {
   .Blog .container .languages-learning .card p{
     font-size: 14px;
   }
+}
+.Contact{
+  background-color: var(--platinum);
+}
+.Contact .container{
+   padding: 60px 0;;
+  
+}
+
+.Contact .container .info{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.social-media ul li a{
+
+}
+.social-media ul li a img{
+  
 }
