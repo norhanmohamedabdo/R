@@ -75,26 +75,24 @@ header .container .nav input {
   header .container .nav input:checked + ul {
     display: block;
   }
-
   header .container .nav ul {
     display: none;
     position: absolute;
     top: 70px;
     right: 0;
-    min-width: 200px;
+    min-width: 150px;
     background-color: var(--white);
     z-index: 10;
   }
   header .container .nav ul li a {
     color: var(--black);
     display: block;
-    margin: 10px;
+    margin: 5px;
   }
   header .container .nav ul li:not(:last-child) {
     border-bottom: 1px solid rgb(0 0 0 / 0.1);
   }
 }
-
 @media (min-width: 992px) {
   header .container .nav label,
   header .container .nav input {
@@ -125,6 +123,13 @@ header .container .nav input {
   .hero .container {
     justify-content: center;
   }
+  .hero .container h1 {
+    font-size: 50px;
+  }
+  .hero .container .info p {
+    font-size: 14px;
+    padding: 7px 0;
+  }
 }
 .hero .container .info {
   margin-top: 80px;
@@ -139,7 +144,7 @@ header .container .nav input {
   padding: 10px 0;
   color: rgba(26, 25, 25, 0.751);
 }
-.container .info a {
+.hero .container .info a {
   display: block;
   width: fit-content;
   margin-top: 10px;
@@ -290,19 +295,62 @@ header .container .nav input {
   }
 }
 
-.Contact {
+.contact {
   background-color: var(--platinum);
 }
-.Contact .container {
-  padding: 60px 0;
+.contact .container h2 {
+  text-align: center;
+  padding: 20px 0;
 }
-
-.Contact .container .info {
+.contact .container .info {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 150px;
+}
+.contact .container .info .login h3 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--dark-gunmetal);
+}
+.login form input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background-color: var(--dark-gunmetal);
+}
+.login form input::placeholder {
+  color: var(--white);
+}
+.login form .massage {
+  width: 100%;
+  height: 100px;
+  background-color: var(--dark-gunmetal);
+  border-radius: 8px;
+}
+.login form .btn-submit {
+  margin: 10px 0;
+}
+.login form .btn-submit input {
+  padding: 10px 20px;
+  margin-left: auto;
+  color: var(--dark-gunmetal);
+  background-color: var(--white);
+}
+.social-media h3 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--dark-gunmetal);
 }
 
-.social-media ul li a {
-}
-.social-media ul li a img {
+.contact .social-media ul li a {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--dark-gunmetal);
 }
